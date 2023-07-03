@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Multi-step form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <!-- Sidebar start -->
+      <div class="steps">
+        <!--step tracker-->
+        <ul>
+          <li>Step 1 <span>your info</span></li>
+          <li>Step 2 <span>Select plan</span></li>
+          <li>Step 3 <span>Add-ons</span></li>
+          <li>Step 4 <span>Summary</span></li>
+        </ul>
+           
+      </div>
+
+      <!-- Sidebar end -->
+      <div class="step-container">
+        <!-- Step 1 start -->
+        <div class="step-1">
+          <!--First Step-->
+          
+            <h3>Personal info </h3>
+            <p>provide your name, email address, and phone
+              number. </p> 
+            <form action=""></form>
+            <div>
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />  
+            </div>
+            <div>
+              <label for="tel">Phone Number</label>
+              <input type="tel" name="tel" id="tel" />  
+            </div>
+            <div>
+              <button>Next Step</button>
+            </div>
+
+          </form>
+        </div>
+
+        <!-- Step 1 end -->
+
+        <!-- Step 2 start -->
+        <div class="step-2">
+          <!--second step-->
+          <h3>Select your plan</h3>
+          <p>You have the option of monthly or yearly billing.</p>
+          <form action="" method="get">
+            <div>
+            <select size="3" name="" id="">
+              <option value="arcade">Arcade $9/mo</option>
+              <option value="advanced">Advanced $12/mo</option>
+              <option value="pro">Pro $9/mo</option>
+            </select>
+            </div>
+            <div>
+              <span>Monthly</span>
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+              <span>Yearly</span>
+            </div>
+            <button>Go Back</button>
+            <button>Next Step</button>
+          </form>
+        </div>
+
+        <!-- Step 2 end -->
+
+        <!-- Step 3 start -->
+
+        <div class="step-3">
+          <!--third step-->
+         <h3>Pick add-ons</h3> 
+         <p>Add-ons help enhance your gaming experience. Online
+          service Access to multiplayer games</p> 
+          <form action="">
+            <div>
+            <input type="checkbox" name="online" id="online" />
+            <label for="online"> Online Services Access to multiplayer games +$1/mo</label>
+            <input type="checkbox" name="storage" id="storage" />
+            <label for="storage"> Larger storage Extra 1TB of cloud save +$2/mo</label>
+          <input type="checkbox" name="theme" id="theme" />
+            <label for="theme"> Customizable Profile Custom theme on your profile +$2/mo</label>
+              </div>
+              <div>
+              <button>Go Back</button>
+              <button>Next Step</button>
+              </div>
+          </form>
+         
+        </div>
+
+        <!-- Step 3 end -->
+
+        <!-- Step 4 start -->
+
+        <div class="step-4">
+          <h3>Finishing up</h3>
+          <p>Double-check everything looks OK before confirming.</p> 
+
+          <!-- Dynamically add subscription and add-on selections here -->
+          <div class="add-info">
+
+          </div>
+          <div>
+         <p>Total (per<span></span>) </p> 
+         </div>
+          <button>Go Back</button>
+          <button>Confirm</button>
+        </div>
+
+        <!-- Step 4 end -->
+
+        <!-- Step 5 start -->
+
+        <div>
+         <p>Thank you! Thanks for confirming your subscription! We hope you have
+          fun using our platform. If you ever need support, please feel free to
+          email us at support@loremgaming.com.</p> 
+        </div>
+
+        <!-- Step 5 end -->
+      </div>
+    </div>
+  </body>
+</html>
