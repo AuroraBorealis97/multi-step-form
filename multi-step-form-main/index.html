@@ -43,7 +43,8 @@
       <!-- Sidebar end -->
       <div class="step-container">
         <!-- Step 1 start -->
-        <div class="step-1">
+        <div class="steps step-1">
+          <div class="container">
           <!--First Step-->
           
             <h3>Personal info </h3>
@@ -52,18 +53,19 @@
             <form action=""></form>
             <div>
               <label for="name">Name</label>
-              <input type="text" name="name" id="name" />
+              <input class="personal-info" type="text" name="name" id="name" />
             </div>
             <div>
               <label for="email">Email</label>
-              <input type="email" name="email" id="email" />  
+              <input class="personal-info" type="email" name="email" id="email" />  
             </div>
             <div>
               <label for="tel">Phone Number</label>
-              <input type="tel" name="tel" id="tel" />  
+              <input class="personal-info" type="tel" name="tel" id="tel" />  
             </div>
-            <div>
-              <button>Next Step</button>
+            </div><!--container-->
+            <div class="buttons">
+              <button class="next">Next Step</button>
             </div>
 
           </form>
@@ -73,6 +75,7 @@
 
         <!-- Step 2 start -->
         <div class="step-2">
+          <div class="container">
           <!--second step-->
           <h3>Select your plan</h3>
           <p>You have the option of monthly or yearly billing.</p>
@@ -92,6 +95,7 @@
               </label>
               <span>Yearly</span>
             </div>
+          </div><!--container-->
             <button>Go Back</button>
             <button>Next Step</button>
           </form>
@@ -102,19 +106,26 @@
         <!-- Step 3 start -->
 
         <div class="step-3">
+          <div class="container">
           <!--third step-->
          <h3>Pick add-ons</h3> 
          <p>Add-ons help enhance your gaming experience. Online
           service Access to multiplayer games</p> 
           <form action="">
-            <div>
-            <input type="checkbox" name="online" id="online" />
-            <label for="online"> Online Services Access to multiplayer games +$1/mo</label>
-            <input type="checkbox" name="storage" id="storage" />
-            <label for="storage"> Larger storage Extra 1TB of cloud save +$2/mo</label>
-          <input type="checkbox" name="theme" id="theme" />
-            <label for="theme"> Customizable Profile Custom theme on your profile +$2/mo</label>
+            <div> 
+              <div class="checkbox">
+                <input type="checkbox" name="online" id="online" />
+                <label for="online"> Online Services Access to multiplayer games +$1/mo</label>
               </div>
+              <div class="checkbox"></div>
+                <input type="checkbox" name="storage" id="storage" />
+                <label for="storage"> Larger storage Extra 1TB of cloud save +$2/mo</label>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" name="theme" id="theme" />
+                <label for="theme"> Customizable Profile Custom theme on your profile +$2/mo</label>
+             </div>
+            </div> <!--container-->
               <div>
               <button>Go Back</button>
               <button>Next Step</button>
@@ -128,6 +139,7 @@
         <!-- Step 4 start -->
 
         <div class="step-4">
+          <div class="container">
           <h3>Finishing up</h3>
           <p>Double-check everything looks OK before confirming.</p> 
 
@@ -138,6 +150,7 @@
           <div>
          <p>Total (per<span></span>) </p> 
          </div>
+         </div><!--container-->
           <button>Go Back</button>
           <button>Confirm</button>
         </div>
@@ -146,7 +159,7 @@
 
         <!-- Step 5 start -->
 
-        <div>
+        <div class="container step-5">
          <p>Thank you! Thanks for confirming your subscription! We hope you have
           fun using our platform. If you ever need support, please feel free to
           email us at support@loremgaming.com.</p> 

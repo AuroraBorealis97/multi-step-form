@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Multi-step form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Sidebar start -->
+    <div class="top">
+      <div class="step-tracker">
+        <!--step tracker-->
+        <ul>
+          <li> <span class="circle active">1</span> <span class="d-none">Step 1 your info</span></li>
+          <li> <span class="circle">2</span> <span class="d-none">Step 2 Select plan</span></li>
+          <li> <span class="circle">3</span> <span class="d-none">Step 3 <span>Add-ons</span></li>
+          <li> <span class="circle">4</span> <span class="d-none">Step 4 Summary</span></li>
+        </ul>
+      </div>
+    </div>
+    <!--end of sidebar-->
+    <div class="bottom">
+      <!--start of steps-->
+      <form action="">
+        <!--start of step 1-->
+        <div class="steps step-1">
+          <div class="info">
+            <div>
+              <h3>Personal info</h3>
+              <p>Please provide your name, email address, and phone number.</p>
+            </div>
+
+            <div>
+              <label for="name">Name</label>
+              <input class="personal-info" type="text" name="name" id="name" />
+            </div>
+
+            <div>
+              <label for="email">Email</label>
+              <input
+                class="personal-info"
+                type="email"
+                name="email"
+                id="email"
+              />
+            </div>
+
+            <div>
+              <label for="tel">Phone Number</label>
+              <input class="personal-info" type="tel" name="tel" id="tel" />
+            </div>
+          </div>
+          <!--end info-->
+          <div class="btns">
+            <div class="buttons">
+              <button class="next">Next Step</button>
+            </div>
+          </div>
+          <!--end btns-->
+        </div>
+        <!--end of step 1-->
+        <!--start of step 2-->
+        <div class="step-2"></div>
+        <!--end of step 2-->
+        <!--start of step 3-->
+        <div class="step-3"></div>
+        <!--end of step 3-->
+        <!--start of step 4-->
+        <div class="step-4"></div>
+        <!--end of step 4-->
+        <!--start of step 5-->
+        <div class="step-5"></div>
+        <!--end step 5-->
+      </form>
+      <!--end of steps-->
+    </div>
+  </body>
+</html>

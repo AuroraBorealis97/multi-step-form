@@ -1,6 +1,124 @@
-body{
-    padding: 0;
-    margin: 0;
-    font-size: 16px;
-    font-family: ubuntu;
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: ubuntu;
+}
+
+/*same styles*/
+h3 {
+  color: hsl(213, 96%, 18%);
+  font-size: 20px;
+}
+p {
+  color: hsl(231, 11%, 63%);
+  width: 80%;
+  font-size: 14px;
+}
+
+label {
+  color: hsl(213, 96%, 18%);
+}
+.top {
+  width: 100vw;
+  height: 20vh;
+  padding: 30px 0 0 0;
+  margin: 0;
+  background-image: url("assets/images/bg-sidebar-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+background-position: center;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  width: 20%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.d-none {
+  display: none;
+}
+
+.circle {
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 50%;
+  color: white;
+}
+
+.active{
+    background-color: hsl(206, 94%, 87%);
+    color: black;
+}
+div.info {
+  
+  position: relative;
+  bottom: 50px;
+  border-radius: 10px;
+  width: 90vw;
+  margin: 0 auto;
+  height: 65vh;
+  background-color: white;
+}
+
+div.steps.step-1 {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(217, 100%, 97%);
+}
+
+.buttons {
+  display: flex;
+  margin: 20px 20px 0 0;
+  flex-direction: row-reverse;
+}
+button {
+  height: 40px;
+  padding: 10px 18px;
+  margin: 0 10px 5px 0;
+  color: white;
+  background-color: hsl(213, 96%, 18%);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+}
+
+.btns {
+  background-color: white;
+  margin: 40px 0 0 0;
+  width: 100vw;
+  padding: 10px 0 12px 0;
+}
+/*Step 1*/
+
+.step-1 label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.step-1 input {
+  width: 90%;
+  height: 25px;
+}
+
+.info div {
+  width: 90%;
+  margin: 15px auto 0 auto;
 }
