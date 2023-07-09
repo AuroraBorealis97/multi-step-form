@@ -6,6 +6,10 @@ body {
 }
 
 /*same styles*/
+
+#d-none{
+    display: none ;
+}
 h3 {
   color: hsl(213, 96%, 18%);
   font-size: 20px;
@@ -46,9 +50,6 @@ ul li {
   padding: 0;
 }
 
-.d-none {
-  display: none;
-}
 
 .circle {
   border: 1px solid white;
@@ -56,6 +57,8 @@ ul li {
   border-radius: 50%;
   color: white;
 }
+
+
 
 .active{
     background-color: hsl(206, 94%, 87%);
@@ -68,11 +71,11 @@ div.info {
   border-radius: 10px;
   width: 90vw;
   margin: 0 auto;
-  height: 65vh;
+  height: auto;
   background-color: white;
 }
 
-div.steps.step-1 {
+div.steps{
   width: 100vw;
   margin: 0;
   padding: 0;
@@ -83,11 +86,12 @@ div.steps.step-1 {
   display: flex;
   margin: 20px 20px 0 0;
   flex-direction: row-reverse;
+  justify-content: space-between;
 }
 button {
   height: 40px;
   padding: 10px 18px;
-  margin: 0 10px 5px 0;
+  margin: 0 10px 5px 5px;
   color: white;
   background-color: hsl(213, 96%, 18%);
   border-radius: 5px;
@@ -119,6 +123,121 @@ button {
 }
 
 .info div {
-  width: 90%;
+  width: 85%;
   margin: 15px auto 0 auto;
 }
+.step-1 input[type=tel]{
+  margin-bottom: 30px;
+}
+
+/* step 2*/
+
+.plan-label span {
+  color:hsl(231, 11%, 63%);
+  display: block;
+  font-size: 14px;
+}
+
+
+.plan{
+  
+  cursor: pointer;
+}
+
+.step-2 input[type=radio] {
+  display:none;
+  cursor: pointer;
+}
+
+
+.step-2 input[type=radio] + .plan-label {
+  display: inline-block;
+  border: 1px solid hsl(231, 11%, 63%);
+  border-radius: 10px;
+  color: hsl(213, 96%, 18%);
+  width: 100%;
+  height: 75px;
+}
+
+.step-2 .plan-label{
+  padding-top: 32px;
+}
+
+input[type=radio]:checked + .plan-label {
+  background: #eee;
+  color: #000;
+  border: 1px solid hsl(213, 96%, 18%);
+}
+
+.step-2 img {
+  float: left;
+  margin: 0 15px 0 15px;
+}
+
+
+.switch{
+  width: 100%;
+  margin: 0 auto;
+
+}
+.toggle {
+  cursor: pointer;
+  display: inline-block;
+  width: 90%;
+  height: 25px;
+  border-radius: 10px;
+  background-color: hsl(217, 100%, 97%);
+  padding: 10px 0 10px 0;
+  margin: 0 auto 10px auto;
+  text-align: center;
+}
+
+.toggle-switch {
+  display: inline-block;
+  background: hsl(213, 96%, 18%);
+  border-radius: 16px;
+  width: 48px;
+  height: 20px;
+  position: relative;
+  vertical-align: middle;
+  transition: background 0.25s;
+}
+.toggle-switch:before, .toggle-switch:after {
+  content: "";
+}
+.toggle-switch:before {
+  display: block;
+  background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  transition: left 0.25s;
+}
+.toggle:hover .toggle-switch:before {
+  background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.toggle-checkbox:checked + .toggle-switch:before {
+  left: 30px;
+}
+
+.toggle-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+
+.toggle-label {
+  margin-left: 5px;
+  position: relative;
+  top: 2px;
+}
+ 
+.d-none {
+  display: none;
+}
+

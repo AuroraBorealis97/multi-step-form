@@ -35,10 +35,22 @@
       <div class="step-tracker">
         <!--step tracker-->
         <ul>
-          <li> <span class="circle active">1</span> <span class="d-none">Step 1 your info</span></li>
-          <li> <span class="circle">2</span> <span class="d-none">Step 2 Select plan</span></li>
-          <li> <span class="circle">3</span> <span class="d-none">Step 3 <span>Add-ons</span></li>
-          <li> <span class="circle">4</span> <span class="d-none">Step 4 Summary</span></li>
+          <li>
+            <span class="circle active">1</span>
+            <span class="d-none">Step 1 your info</span>
+          </li>
+          <li>
+            <span class="circle">2</span>
+            <span class="d-none">Step 2 Select plan</span>
+          </li>
+          <li>
+            <span class="circle">3</span>
+            <span class="d-none">Step 3 Add-ons</span>
+          </li>
+          <li>
+            <span class="circle">4</span>
+            <span class="d-none">Step 4 Summary</span>
+          </li>
         </ul>
       </div>
     </div>
@@ -84,7 +96,63 @@
         </div>
         <!--end of step 1-->
         <!--start of step 2-->
-        <div class="step-2"></div>
+
+        <div class="d-none steps step-2">
+          <div class="info">
+            <div>
+              <h3>Select your plan</h3>
+              <p>You have the option of monthly or yearly billing.</p>
+            </div>
+
+            <div>
+              <div class="plan">
+                <input type="radio" name="plan" id="arcade" />
+                <label class="plan-label" for="arcade"
+                  ><img
+                    src="assets/images/icon-arcade.svg"
+                    alt="arcade icon"
+                  />Arcade <span class="price">$9/mo</span></label
+                >
+              </div>
+
+              <div class="plan">
+                <input type="radio" name="plan" id="advanced" />
+                <label class="plan-label" for="advanced">
+                  <img
+                    src="assets/images/icon-advanced.svg"
+                    alt="advanced icon"
+                  />Advanced <span class="price">$12/mo</span></label
+                >
+              </div>
+
+              <div class="plan">
+                <input type="radio" name="plan" id="pro" />
+                <label class="plan-label" for="pro"
+                  ><img src="assets/images/icon-pro.svg" alt="pro icon" />Pro
+                  <span class="price">$15/mo</span></label
+                >
+              </div>
+            </div>
+
+            <div class="switch">
+              <label class="toggle">
+                <span>monthly</span>
+                <input class="toggle-checkbox" type="checkbox" checked>
+                <span class="toggle-switch"></span>
+                <span class="toggle-label">yearly</span>
+              </label>
+            </div>
+          </div>
+          <!--end info-->
+
+          <div class="btns">
+            <div class="buttons">
+              <button class="next">Next Step</button>
+              <button>Go Back</button>
+            </div>
+          </div>
+        </div>
+
         <!--end of step 2-->
         <!--start of step 3-->
         <div class="step-3"></div>
