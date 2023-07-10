@@ -91,7 +91,7 @@ div.steps{
 button {
   height: 40px;
   padding: 10px 18px;
-  margin: 0 10px 5px 5px;
+  margin: 0 10px 0 5px;
   color: white;
   background-color: hsl(213, 96%, 18%);
   border-radius: 5px;
@@ -108,7 +108,7 @@ button {
   background-color: white;
   margin: 40px 0 0 0;
   width: 100vw;
-  padding: 10px 0 12px 0;
+  padding: 10px 0 0 0;
 }
 /*Step 1*/
 
