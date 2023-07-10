@@ -86,6 +86,8 @@ div.steps{
 .buttons {
   display: flex;
   margin: 20px 20px 0 0;
+  height: 10vh;
+  padding: 0;
   flex-direction: row-reverse;
   justify-content: space-between;
 }
@@ -107,9 +109,9 @@ button {
 
 .btns {
   background-color: white;
-  margin: 60px 0 0 0;
+  margin: 40px 0 0 0;
   width: 100vw;
-  padding: 10px 0 0 0;
+  padding: 0;
 }
 /*Step 1*/
 
@@ -128,7 +130,7 @@ button {
   margin: 15px auto 0 auto;
 }
 .step-1 input[type=tel]{
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 /* step 2*/
