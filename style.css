@@ -80,6 +80,7 @@ div.steps{
   margin: 0;
   padding: 0;
   background-color: hsl(217, 100%, 97%);
+ 
 }
 
 .buttons {
@@ -106,7 +107,7 @@ button {
 
 .btns {
   background-color: white;
-  margin: 45px 0 0 0;
+  margin: 60px 0 0 0;
   width: 100vw;
   padding: 10px 0 0 0;
 }
