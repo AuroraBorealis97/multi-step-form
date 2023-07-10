@@ -118,12 +118,13 @@ button {
 
 .step-1 label {
   display: block;
-  margin-bottom: 5px;
+  margin: 20px 0 5px 0;
 }
 
 .step-1 input {
   width: 90%;
-  height: 25px;
+  height: 30px;
+  
 }
 
 .info div {
