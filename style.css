@@ -109,6 +109,7 @@ button {
   margin: 25px 0 0 0;
   width: 100vw;
   padding: 10px 0 0 0;
+  border: 1px solid red;
 }
 /*Step 1*/
 
