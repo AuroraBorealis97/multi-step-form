@@ -13,12 +13,12 @@ body {
 h3 {
   color: hsl(213, 96%, 18%);
   font-size: 26px;
-  padding-top: 20px;
+  padding-top: 18px;
 }
 p {
   color: hsl(231, 11%, 63%);
   width: 80%;
-  font-size: 18px;
+  font-size: 16.5px;
   line-height: 1.5;
 }
 
