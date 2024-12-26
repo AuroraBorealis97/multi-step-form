@@ -59,7 +59,7 @@
       <!--start of steps-->
       <form action="">
         <!--start of step 1-->
-        <div class="d-none steps step-1">
+        <div class="steps step-1">
           <div class="info">
             <div>
               <h3>Personal info</h3>
@@ -97,7 +97,7 @@
         <!--end of step 1-->
         <!--start of step 2-->
 
-        <div class="steps step-2">
+        <div class="d-none steps step-2">
           <div class="info">
             <div>
               <h3>Select your plan</h3>
@@ -137,7 +137,7 @@
             <div class="switch">
               <label class="toggle">
                 <span>monthly</span>
-                <input class="toggle-checkbox" type="checkbox" checked>
+                <input class="toggle-checkbox" type="checkbox" checked />
                 <span class="toggle-switch"></span>
                 <span class="toggle-label">yearly</span>
               </label>
@@ -155,7 +155,47 @@
 
         <!--end of step 2-->
         <!--start of step 3-->
-        <div class="step-3"></div>
+        <div class="d-none steps step-3">
+          <div class="info">
+            <!--third step-->
+            <div>
+              <h3>Pick add-ons</h3>
+              <p>
+                Add-ons help enhance your gaming experience. Online service
+                Access to multiplayer games
+              </p>
+            </div>
+
+            <div>
+              <div class="checkbox">
+                <input type="checkbox" name="online" id="online" />
+                <label class="plan-label" for="online">
+                  Online Services Access to multiplayer games +$1/mo</label
+                >
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" name="storage" id="storage" />
+                <label class="plan-label" for="storage">
+                  Larger storage Extra 1TB of cloud save +$2/mo</label
+                >
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" name="theme" id="theme" />
+                <label class="plan-label" for="theme">
+                  Customizable Profile Custom theme on your profile
+                  +$2/mo</label
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="btns">
+            <div class="buttons">
+              <button class="next">Next Step</button>
+              <button>Go Back</button>
+            </div>
+          </div>
+        </div>
         <!--end of step 3-->
         <!--start of step 4-->
         <div class="step-4"></div>
