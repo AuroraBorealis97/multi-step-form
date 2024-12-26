@@ -3,6 +3,7 @@ body {
   margin: 0;
   font-size: 16px;
   font-family: ubuntu;
+  height: 100vh;
 }
 
 /*same styles*/
@@ -12,13 +13,13 @@ body {
 }
 h3 {
   color: hsl(213, 96%, 18%);
-  font-size: 30px;
+  font-size: 40px;
   padding-top: 18px;
 }
 p {
   color: hsl(231, 11%, 63%);
   width: 80%;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1.5;
 }
 
@@ -27,7 +28,7 @@ label {
 }
 .top {
   width: 100vw;
-  height: 25vh;
+  height: 20vh;
   padding: 30px 0 0 0;
   margin: 0;
   background-image: url("assets/images/bg-sidebar-mobile.svg");
@@ -71,26 +72,26 @@ div.info {
   position: relative;
   bottom: 50px;
   border-radius: 10px;
-  width: 90vw;
+  width: 80vw;
   margin: 0 auto;
-  height: 80%;
+  height: 90%;
   background-color: white;
-  
+  border: 1px solid blue;
 }
 
 div.steps{
   width: 100vw;
-  height: 90%;
+  height: 80vh;
   margin: 0;
   padding: 0;
   background-color: hsl(217, 100%, 97%);
- 
+ border: 1px solid red;
 }
  
 
 button {
-  height: 40px;
-  padding: 10px 18px;
+  height: 45px;
+  padding: 15px 20px;
   margin: 10px 10px 10px 0;
   color: white;
   background-color: hsl(213, 96%, 18%);
@@ -116,7 +117,7 @@ button {
   background-color: white;
   margin: 80px 0 0 0;
   width: 100vw;
-  height: 8vh;
+  
   padding: 0;
  
 }
@@ -129,7 +130,8 @@ button {
 
 .step-1 input {
   width: 90%;
-  height: 40px;
+  height: 45px;
+  margin-top:5px;
   
 }
 
