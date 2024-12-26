@@ -75,19 +75,20 @@ div.info {
   margin: 0 auto;
   height: 80%;
   background-color: white;
-  border: 1px solid red;
+  
 }
 
 div.steps{
   width: 100vw;
-  height: 80%;
-  border: 1px solid red;
+  height: 90%;
   margin: 0;
   padding: 0;
   background-color: hsl(217, 100%, 97%);
  
 }
-
+ form{
+  border: 2px solid red;
+ }
 
 button {
   height: 40px;
