@@ -20,7 +20,7 @@ h3 {
 p {
   color: hsl(231, 11%, 63%);
   width: 80%;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.5;
   margin: 0;
 }
@@ -45,12 +45,12 @@ ul {
   width: 100vw;
   list-style: none;
   padding: 0;
-  margin: 5px 0;
+  margin: 20px 0;
   
 }
 
 ul li {
-  width: 5%;
+  width: 10%;
   text-align: center;
   margin: 10px;
   padding: 0;
