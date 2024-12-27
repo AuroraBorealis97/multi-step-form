@@ -59,7 +59,7 @@
       <!--start of steps-->
       <form action="">
         <!--start of step 1-->
-        <div class="steps step-1">
+        <div class="d-none steps step-1">
           <div class="info">
             <div>
               <h3>Personal info</h3>
@@ -98,21 +98,66 @@
         <!--end of step 1-->
         <!--start of step 2-->
 
-        <div class="d-none steps step-2">
+        <div class=" steps step-2">
           <div class="info">
             <div>
               <h3>Select your plan</h3>
               <p>You have the option of monthly or yearly billing.</p>
             </div>
-
-            <div>
+            <div class="plan"> <!--Monthly-->
+              <input type="radio" name="plan" id="advanced" />
+              <label class="plan-label" for="advanced">
+                <img
+                  src="assets/images/icon-arcade.svg"
+                  alt="advanced icon"
+                />
+                <div class="label-text">
+                <span class="subscription-type">Arcade</span>
+                <span class="price">$9/mo</span>
+              </div>
+              </label>
+                
+              
+            </div>
+            <div class="plan"> 
+              <input type="radio" name="plan" id="advanced" />
+              <label class="plan-label" for="advanced">
+                <img
+                  src="assets/images/icon-advanced.svg"
+                  alt="advanced icon"
+                />
+                <div class="label-text">
+                <span>Advanced</span>
+                <span class="price">$12/mo</span>
+                </div>
+                </label>
+            </div>
+  
+            <div class="plan">
+              <input type="radio" name="plan" id="pro" />
+              <label class="plan-label padding" for="pro"
+                ><img src="assets/images/icon-pro.svg" alt="pro icon" />
+                <div class="label-text">
+                <span class="subscription-type">Pro</span>
+                <span class="price">$15/mo</span>
+                </div>
+              </label>
+            </div>
+          </div>
+            <div class="d-none "> <!--Yearly-->
               <div class="plan">
                 <input type="radio" name="plan" id="arcade" />
                 <label class="plan-label" for="arcade"
                   ><img
                     src="assets/images/icon-arcade.svg"
                     alt="arcade icon"
-                  />Arcade <span class="price">$9/mo</span></label
+                  />
+                  <div class="label-text">
+                 <span class = "subscription-type">Arcade</span> 
+                 <span class="price">$90/yr</span>
+                 <span class="free">2 months free</span>
+                 </div>
+                 </label
                 >
               </div>
 
@@ -122,16 +167,26 @@
                   <img
                     src="assets/images/icon-advanced.svg"
                     alt="advanced icon"
-                  />Advanced <span class="price">$12/mo</span></label
+                  />
+                  <div class="label-text">
+                  <span class="subscription-type">Advanced</span>
+                  <span class="price">$120/yr</span>
+                  <span class="free">2 months free</span>
+                  </div>
+                  </label
                 >
               </div>
 
               <div class="plan">
                 <input type="radio" name="plan" id="pro" />
                 <label class="plan-label" for="pro"
-                  ><img src="assets/images/icon-pro.svg" alt="pro icon" />Pro
-                  <span class="price">$15/mo</span></label
-                >
+                  ><img src="assets/images/icon-pro.svg" alt="pro icon" />
+                  <div class = "label-text">
+                  <span class="subscription-type">Pro</span>
+                  <span class="price">$150/yr</span>
+                  <span class="free">2 months free</span>
+                  </div>
+                  </label>
               </div>
             </div>
 
@@ -167,7 +222,7 @@
               </p>
             </div>
 
-            <div>
+            <div class="d-none monthly">
               <div class="checkbox">
                 <input type="checkbox" name="online" id="online" />
                 <label class="plan-label" for="online">
@@ -189,7 +244,7 @@
               </div>
             </div>
           </div>
-
+         
           <div class="btns">
             <div class="buttons">
               <button class="next">Next Step</button>

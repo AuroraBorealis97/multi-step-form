@@ -145,10 +145,12 @@ div.steps.step-1 {
 
 /* step 2*/
 
-.plan-label span {
+.plan-label span.price {
   color: hsl(231, 11%, 63%);
   display: block;
   font-size: 14px;
+  
+  
 }
 
 .plan {
@@ -158,6 +160,7 @@ div.steps.step-1 {
 .step-2 input[type="radio"] {
   display: none;
   cursor: pointer;
+  
 }
 
 .step-2 input[type="radio"] + .plan-label {
@@ -166,11 +169,15 @@ div.steps.step-1 {
   border-radius: 10px;
   color: hsl(213, 96%, 18%);
   width: 100%;
-  height: 75px;
+  height: 90px;
+}
+.padding{
+  margin-bottom: 80px;
 }
 
-.step-2 .plan-label {
-  padding-top: 32px;
+
+.price{
+  padding: 4px 0 6px 0;
 }
 
 input[type="radio"]:checked + .plan-label {
@@ -181,9 +188,13 @@ input[type="radio"]:checked + .plan-label {
 
 .step-2 img {
   float: left;
+  padding-top: 20px;
   margin: 0 15px 0 15px;
+  
 }
-
+.free{
+  margin-bottom: 5px;
+}
 .switch {
   width: 100%;
   margin: 0 auto;
