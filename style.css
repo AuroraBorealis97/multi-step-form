@@ -13,13 +13,13 @@ body {
 }
 h3 {
   color: hsl(213, 96%, 18%);
-  font-size: 45px;
+  font-size: 40px;
   padding-top: 18px;
 }
 p {
   color: hsl(231, 11%, 63%);
   width: 80%;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 1.5;
 }
 
@@ -70,9 +70,9 @@ div.info {
   position: relative;
   bottom: 100px;
   border-radius: 10px;
-  width: 60vw;
+  width: 70vw;
   margin: 0 auto;
-  height: 77%;
+  height: 100%;
   background-color: white;
 }
 
