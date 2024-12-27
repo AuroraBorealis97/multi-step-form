@@ -45,7 +45,7 @@ ul {
   width: 100vw;
   list-style: none;
   padding: 0;
-  margin: 20px 0;
+  margin: 5px 0;
   
 }
 
@@ -74,7 +74,7 @@ div.info {
   border-radius: 10px;
   width: 90vw;
   margin: 0 auto;
-  height: 100%;
+  height: auto;
   background-color: white;
 }
 
