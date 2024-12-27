@@ -13,14 +13,14 @@ body {
 }
 h3 {
   color: hsl(213, 96%, 18%);
-  font-size: 40px;
+  font-size: 35px;
   padding: 0;
   margin: 0 0 20px 0;
 }
 p {
   color: hsl(231, 11%, 63%);
   width: 80%;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.5;
   margin: 0;
 }
@@ -45,7 +45,7 @@ ul {
   width: 100vw;
   list-style: none;
   padding: 0;
-  margin: 30px 0;
+  margin: 20px 0;
   
 }
 
@@ -72,7 +72,7 @@ div.info {
   position: relative;
   bottom: 100px;
   border-radius: 10px;
-  width: 70vw;
+  width: 90vw;
   margin: 0 auto;
   height: 100%;
   background-color: white;
