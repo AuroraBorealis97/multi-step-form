@@ -14,13 +14,15 @@ body {
 h3 {
   color: hsl(213, 96%, 18%);
   font-size: 40px;
-  padding-top: 18px;
+  padding: 0;
+  margin: 0 0 20px 0;
 }
 p {
   color: hsl(231, 11%, 63%);
   width: 80%;
   font-size: 20px;
   line-height: 1.5;
+  margin: 0;
 }
 
 label {
