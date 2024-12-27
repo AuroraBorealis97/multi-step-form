@@ -123,14 +123,14 @@ div.steps.step-1 {
 }
 .step-1 label {
   display: block;
-  margin: 40px 0 5px 0;
+  margin: 5px 0 5px 0;
   font-size: 20px;
 }
 
 .step-1 input {
   width: 90%;
   height: 50px;
-  margin-top: 10px;
+
 }
 
 .info div {
