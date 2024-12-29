@@ -276,14 +276,51 @@ input[type="radio"]:checked + .plan-label {
   border: 1px solid hsl(231, 11%, 63%);
   border-radius: 10px;
   cursor: pointer;
+  
+  margin-bottom: 20px;
+}
+
+.title{
+  color:hsl(213, 96%, 18%);
+  font-weight: bold;
+}
+
+.description{
+  color:hsl(231, 11%, 63%);
+}
+
+.price-2{
+  color: hsl(243, 100%, 62%);
+}
+
+.addons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+  width:100%;
+
+}
+
+
+.item-1 span{
+  display: block;
+}
+.item-2{
+  display: flex;
+  justify-content: end;
+}
+.margin{
+  margin-bottom: 30px;
 }
 
 .step-3 .plan-label {
-  padding-top: 32px;
+  padding: 20px 0;
   display: inline-block;
-
   color: hsl(213, 96%, 18%);
-  width: 95%;
+  width: 70vw;
+  margin-left: 50px;
   height: 75px;
 }
 

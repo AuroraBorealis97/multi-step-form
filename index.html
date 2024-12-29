@@ -98,7 +98,7 @@
         <!--end of step 1-->
         <!--start of step 2-->
 
-        <div class=" steps step-2">
+        <div class="d-none steps step-2">
           <div class="info">
             <div>
               <h3>Select your plan</h3>
@@ -198,20 +198,21 @@
                 <span class="toggle-label">yearly</span>
               </label>
             </div>
+            <div class="btns">
+              <div class="buttons container">
+                <button class="btn-1 next">Next Step</button>
+                <button class="btn-2">Go Back</button>
+              </div>
+            </div>
+          </div>
           </div>
           <!--end info-->
 
-          <div class="btns">
-            <div class="buttons container">
-              <button class="btn-1 next">Next Step</button>
-              <button class="btn-2">Go Back</button>
-            </div>
-          </div>
-        </div>
+          
 
         <!--end of step 2-->
         <!--start of step 3-->
-        <div class="d-none steps step-3">
+        <div class=" steps step-3">
           <div class="info">
             <!--third step-->
             <div>
@@ -222,33 +223,57 @@
               </p>
             </div>
 
-            <div class="d-none monthly">
+          
               <div class="checkbox">
                 <input type="checkbox" name="online" id="online" />
                 <label class="plan-label" for="online">
-                  Online Services Access to multiplayer games +$1/mo</label
-                >
+                  <div class="addons">
+                <div class="item-1">
+                 <span class="title">Online Services</span>
+                 <span class="description"> Access to multiplayer games</span> 
+                 </div>
+                 <div class="item-2">
+                 <span class="price-2">+$1/mo</span>
+                 </div>
+                 </div>
+                </label>
               </div>
               <div class="checkbox">
                 <input type="checkbox" name="storage" id="storage" />
                 <label class="plan-label" for="storage">
-                  Larger storage Extra 1TB of cloud save +$2/mo</label
-                >
+                  <div class="addons">
+                <div class="item-1">
+                 <span class="title">Larger storage</span>
+                 <span class="description">Extra 1TB of cloud save</span> 
+                </div>
+                <div class="item-2">
+                 <span class="price-2">+$2/mo</span>
+                 </div>
+                 </div>
+                </label>
               </div>
-              <div class="checkbox">
+              <div class="checkbox margin">
                 <input type="checkbox" name="theme" id="theme" />
                 <label class="plan-label" for="theme">
-                  Customizable Profile Custom theme on your profile
-                  +$2/mo</label
+                  <div class="addons">
+                    <div class="item-1">
+                 <span class="title">Customizable Profile</span> 
+                 <span class="description">Custom theme on your profile</span> 
+                 </div>
+                 <div class="item-2">
+                 <span class="price-2">+$2/mo</span> 
+                 </div>
+                 </div>
+                  </label
                 >
               </div>
             </div>
           </div>
          
           <div class="btns">
-            <div class="buttons">
-              <button class="next">Next Step</button>
-              <button>Go Back</button>
+            <div class="buttons container">
+              <button class="btn-1 next">Next Step</button>
+              <button class="btn-2">Go Back</button>
             </div>
           </div>
         </div>
