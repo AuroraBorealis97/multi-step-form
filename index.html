@@ -59,7 +59,7 @@
       <!--start of steps-->
       <form action="">
         <!--start of step 1-->
-        <div class="d-none steps step-1">
+        <div id="step-1" class="steps step-1">
           <div class="info">
             <div>
               <h3>Personal info</h3>
@@ -68,7 +68,7 @@
 
             <div>
               <label for="name">Name</label>
-              <input class="personal-info" type="text" name="name" id="name" placeholder="e.g. Stephen King" />
+              <input class="personal-info" type="text" name="name" id="name" placeholder="e.g. Stephen King" autocomplete="on" />
             </div>
 
             <div>
@@ -79,18 +79,19 @@
                 name="email"
                 id="email"
                 placeholder="e.g. stephenking@lorem.com"
+                autocomplete ="on"
               />
             </div>
 
             <div>
               <label for="tel">Phone Number</label>
-              <input class="personal-info" type="tel" name="tel" id="tel" placeholder="e.g. + 1 234 567 890" />
+              <input class="personal-info" type="tel" name="tel" id="tel" placeholder="e.g. + 1 234 567 890" autocomplete="on"/>
             </div>
           </div>
           <!--end info-->
           <div class="btns">
             <div class="buttons">
-              <button class="next">Next Step</button>
+              <button id="next-1" class="next">Next Step</button>
             </div>
           </div>
           <!--end btns-->
@@ -98,15 +99,15 @@
         <!--end of step 1-->
         <!--start of step 2-->
 
-        <div class="d-none steps step-2">
+        <div id="step-2" class="d-none steps step-2">
           <div class="info">
             <div>
               <h3>Select your plan</h3>
               <p>You have the option of monthly or yearly billing.</p>
             </div>
             <div class="plan"> <!--Monthly-->
-              <input type="radio" name="plan" id="advanced" />
-              <label class="plan-label" for="advanced">
+              <input type="radio" name="plan" id="arcade" autocomplete="on" />
+              <label class="plan-label" for="arcade">
                 <img
                   src="assets/images/icon-arcade.svg"
                   alt="advanced icon"
@@ -120,7 +121,7 @@
               
             </div>
             <div class="plan"> 
-              <input type="radio" name="plan" id="advanced" />
+              <input type="radio" name="plan" id="advanced" autocomplete="on"/>
               <label class="plan-label" for="advanced">
                 <img
                   src="assets/images/icon-advanced.svg"
@@ -134,7 +135,7 @@
             </div>
   
             <div class="plan">
-              <input type="radio" name="plan" id="pro" />
+              <input type="radio" name="plan" id="pro" autocomplete="on"/>
               <label class="plan-label padding" for="pro"
                 ><img src="assets/images/icon-pro.svg" alt="pro icon" />
                 <div class="label-text">
@@ -146,7 +147,7 @@
           </div>
             <div class="d-none "> <!--Yearly-->
               <div class="plan">
-                <input type="radio" name="plan" id="arcade" />
+                <input type="radio" name="plan" id="arcade-year" autocomplete="on" />
                 <label class="plan-label" for="arcade"
                   ><img
                     src="assets/images/icon-arcade.svg"
@@ -162,7 +163,7 @@
               </div>
 
               <div class="plan">
-                <input type="radio" name="plan" id="advanced" />
+                <input type="radio" name="plan" id="advanced-year" autocomple="on"/>
                 <label class="plan-label" for="advanced">
                   <img
                     src="assets/images/icon-advanced.svg"
@@ -178,8 +179,8 @@
               </div>
 
               <div class="plan">
-                <input type="radio" name="plan" id="pro" />
-                <label class="plan-label" for="pro"
+                <input type="radio" name="plan" id="pro-year" autocomplete="on" />
+                <label class="plan-label" for="pro-year"
                   ><img src="assets/images/icon-pro.svg" alt="pro icon" />
                   <div class = "label-text">
                   <span class="subscription-type">Pro</span>
@@ -193,15 +194,15 @@
             <div class="switch">
               <label class="toggle">
                 <span>monthly</span>
-                <input class="toggle-checkbox" type="checkbox" checked />
+                <input id = "toggle-btn" class="toggle-checkbox" type="checkbox" checked autocomplete="on" />
                 <span class="toggle-switch"></span>
                 <span class="toggle-label">yearly</span>
               </label>
             </div>
             <div class="btns">
               <div class="buttons container">
-                <button class="btn-1 next">Next Step</button>
-                <button class="btn-2">Go Back</button>
+                <button id ="next-2" class="btn-1 next">Next Step</button>
+                <button id="back-btn-1" class="btn-2">Go Back</button>
               </div>
             </div>
           </div>
@@ -212,7 +213,7 @@
 
         <!--end of step 2-->
         <!--start of step 3-->
-        <div class=" steps step-3">
+        <div id = "step-3" class=" d-none steps step-3">
           <div class="info">
             <!--third step-->
             <div>
@@ -225,7 +226,7 @@
 
           
               <div class="checkbox">
-                <input type="checkbox" name="online" id="online" />
+                <input type="checkbox" name="online" id="online" autocomplete="on" />
                 <label class="plan-label" for="online">
                   <div class="addons">
                 <div class="item-1">
@@ -233,13 +234,14 @@
                  <span class="description"> Access to multiplayer games</span> 
                  </div>
                  <div class="item-2">
-                 <span class="price-2">+$1/mo</span>
+                 <span class="monthly price-2">+$1/mo</span>
+                 <span class="yearly d-none price-2">+$10/yr</span>
                  </div>
                  </div>
                 </label>
               </div>
               <div class="checkbox">
-                <input type="checkbox" name="storage" id="storage" />
+                <input type="checkbox" name="storage" id="storage" autocomplete="on"/>
                 <label class="plan-label" for="storage">
                   <div class="addons">
                 <div class="item-1">
@@ -248,12 +250,13 @@
                 </div>
                 <div class="item-2">
                  <span class="price-2">+$2/mo</span>
+                 <span class="yearly d-none price-2">+$20/yr</span>
                  </div>
                  </div>
                 </label>
               </div>
               <div class="checkbox margin">
-                <input type="checkbox" name="theme" id="theme" />
+                <input type="checkbox" name="theme" id="theme"  autocomplete="on"/>
                 <label class="plan-label" for="theme">
                   <div class="addons">
                     <div class="item-1">
@@ -262,30 +265,89 @@
                  </div>
                  <div class="item-2">
                  <span class="price-2">+$2/mo</span> 
+                 <span class="yearly d-none price-2">+$20/yr</span>
                  </div>
                  </div>
-                  </label
-                >
+                  </label>
+              </div>
+            </div>
+            <div class="btns">
+              <div class="buttons container">
+                <button id="next-3" class="btn-1 next">Next Step</button>
+                <button id="back-2" class="btn-2">Go Back</button>
               </div>
             </div>
           </div>
          
-          <div class="btns">
-            <div class="buttons container">
-              <button class="btn-1 next">Next Step</button>
-              <button class="btn-2">Go Back</button>
-            </div>
-          </div>
+          
         </div>
         <!--end of step 3-->
         <!--start of step 4-->
-        <div class="step-4"></div>
+        <div id="step-4" class="steps d-none step-4">
+          <div class="info">
+            <h2 class="total-page">Finishing up</h2>
+            <p class="total-page">Double-check everything looks OK before confirming.</p>
+            <div class="grey-box">
+            <div class="total">
+              <div class="item-1">
+            <h5 class="total-page" id="subscription-type">Aracde(monthly)</h5> 
+          <p class="change-btn">change</p>
+          </div>
+          <div class="item-2">
+            <span id="subscrititon-price">$9/mo</span>
+          </div>
+        </div> <!--total-->
+        <div class="total">
+          <div class="item-1">
+          <p>Online Services</p>
+          </div>
+          <div class="item-2">
+            <span id="services-price">+$1/mo</span>
+          </div>
+          </div>
+          <div class = total>
+            <div class="item-1">
+          <p>Larger Storage</p>
+          </div>
+          <div class="item-2">
+            <span id="Storage-price">+$2/mo</span>
+          </div>
+        </div>
+        </div><!--grey-box-->
+        <div class="total">
+          <div class ="item-1">
+          <p>Total(per month)</p>
+          </div>
+          <div class="item-2">
+            <span id = "final-price">+$12/mo</span>
+          </div>
+          </div>
+          </div> <!--info-->
+          <div class="btns">
+            <div class="buttons container">
+              <button id="next-4" class="btn-1 next">Next Step</button>
+              <button id="back-3" class="btn-2">Go Back</button>
+            </div>
+          </div>
+        </div><!--step 4-->
+
         <!--end of step 4-->
         <!--start of step 5-->
-        <div class="step-5"></div>
+        <div id="step-5" class="d-none steps step-5">
+        <div class="info">
+          <div class="last-step">
+          <img class="last-step" src="assets/images/icon-thank-you.svg" alt="">
+          </div>
+          <h2 class="last-step">Thank You!</h2>
+          <p class="last-step">Thanks for confirming your subscrition! We hope you have fun using
+            our platform. If you need support, please feel free to email us at support@loremgaming.com.
+          </p>
+        </div>
+       </div>
         <!--end step 5-->
       </form>
       <!--end of steps-->
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
